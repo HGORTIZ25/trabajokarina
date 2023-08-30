@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo proyecto</title>
+    <link rel="stylesheet" href="estilosIndex.css">
+</head>
+<style>
+    @media (max-width: 510px) {
+        .s1 {
+            display: flex;
+            align-items: center;
+            
+        }
+        .s1 nav{
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            gap: 5rem;
+            padding: 0.3rem;
+            background-color: black;
+            top:-60%;
+            right: 0;
+            
+
+        }
+        .s1 a{
+            font-size: 22px;
+        }
+        .s2{
+            display: flex;
+           
+            align-items: center;
+        }
+        .s3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .s4{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            text-align: justify;
+            
+        }
+        .s5{
+            display: flex;
+            flex-direction: column;
+            
+            justify-content: flex-start;
+        
+        }
+        .s5 ul{
+            display: flex;
+            margin-left: -7%;
+            gap: 1rem;
+           
+        }
+        .s5 h2{
+            font-size:15px ;
+        }
+        .s5 li{
+            font-size:13px;
+
+        }
+        .iconos{
+            display: flex;
+            gap: 1rem;
+        }
+        .menu{
+            position: absolute;
+            right: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        #btmenu{
+            visibility: visible;
+            position: absolute;
+            right: 3.8rem;
+            
+        
+        }
+        #btcerrar{
+            position: absolute;
+            visibility:hidden;
+            right: 3.8rem;
+        }
+        #lista{
+            visibility: hidden;
+            transition: 250ms;
+        }
+      }
+</style>
+<body>
+    <section class="s1">
+        <img src="astronauta (1).png" alt="">
+        <nav id="lista">
+            <a href="#">Inicio <img src="./" alt=""></a>
+            <a href="#">Iniciar sesion </a>
+            <a href="#">Registrarse</a>
+            <a href="#">Conocer mas </a>
+        </nav>
+        <div class="iconos">
+            <img src="whatsapp.png" alt="">
+            <img src="instagram (1).png" alt="">
+            <img src="facebook (2).png" alt="">
+        </div>
+        <div id="menu" class="menu">
+         <button id="btmenu" onclick="menu()"> menu</button> 
+         <button  id="btcerrar" onclick="cerrar()">cerrar</button> 
+        </div>   
+    </section>
+    <header>
+        
+    <section class="s2">
+        <img src="fondo.jpg" alt="">
+
+    </section>
+
+    </header>
+
+    <section class="s3">
+        <img  src="elefante.jpg" alt="">
+        <img src="cebra.jpg" alt="">
+        <img src="elefante.jpg" alt="">
+        
+    </section>
+
+    <section class="s4">
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque expedita aut aspernatur at illum soluta dolor praesentium quidem repellat in! Accusantium officiis maxime est nesciunt ab hic similique ratione enim?</p>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit quo facere neque voluptate, veniam eaque dolorem culpa non assumenda voluptatibus quisquam atque ea! Fugiat sit dignissimos sed numquam natus nobis!</p>
+
+
+    </section>
+    <section class="s2">
+        <img src="fondo.jpg" alt="">
+
+    </section>
+    <section class="s5">
+        <img  src="elefante.jpg" alt="">
+        <img src="cebra.jpg" alt="">
+        <img src="elefante.jpg" alt="">
+    
+    
+    </section>
+    <section class="s4">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque expedita aut aspernatur at illum soluta dolor praesentium quidem repellat in! Accusantium officiis maxime est nesciunt ab hic similique ratione enim?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit quo facere neque voluptate, veniam eaque dolorem culpa non assumenda voluptatibus quisquam atque ea! Fugiat sit dignissimos sed numquam natus nobis!</p>
+ 
+ 
+     </section>
+     <footer class="s5">
+        <div class="list">
+            <ul>
+                <h2>CONTÁCTANOS </h2>
+                <li>Contáctanos</li>
+                <li>Mas ayuda</li>
+                <li>saber sobre nosotros</li>
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                 <h2>DESARROLLADORES</h2>
+                <li>hernay ortiz </li>
+                <li>diomedes dias </li>
+            </ul>
+
+        </div>
+        <div class="list">
+            <ul>
+                <h2>SIGUENOS </h2>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+      
+
+
+
+
+
+     </footer>
+    
+    <script>
+function menu(){
+    document.getElementById("lista").style.visibility="visible"
+    document.getElementById("lista").style.top="12%"
+    document.getElementById("btmenu").style.visibility="hidden"
+    document.getElementById("btcerrar").style.visibility="visible"
+}
+function cerrar(){
+    document.getElementById("lista").style.visibility="hidden"
+    document.getElementById("lista").style.top="-60%"
+    document.getElementById("btmenu").style.visibility="visible"
+    document.getElementById("btcerrar").style.visibility="hidden"
+}
+
+    </script>
+
+
+
+</body>
+</html>
